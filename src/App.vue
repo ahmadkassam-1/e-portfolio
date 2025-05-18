@@ -386,7 +386,7 @@ export default {
         {
           id: 1,
           type: "Podcast Production",
-          title: "Softwareontwikkeling in de Zorgsector: Inzichten uit het Interview met Tom D'Hulster (CGM)",
+          title: "Software Development in the Healthcare Sector: Insights from the Interview with Tom D'Hulster (CGM)",
           date: "February 2025",
           summary: "Co-hosted and produced a comprehensive podcast episode interviewing Tom D'Hulster, a senior software developer at CGM. The podcast explored the challenges of developing medical software, the impact of GDPR on healthcare technology, security measures for patient data protection, and career insights for aspiring software developers in the healthcare sector.",
           targetAudience: "Computer science students, software developers, and professionals interested in healthcare technology",
