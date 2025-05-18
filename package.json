@@ -1,0 +1,27 @@
+{
+  "name": "e-portfolio",
+  "version": "1.0.0",
+  "description": "E-Portfolio built with Vue.js for university assignment",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 5000"
+  },
+  "dependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "portfolio",
+    "vue",
+    "university",
+    "assignment"
+  ],
+  "author": "Ahmad Kassam",
+  "license": "MIT"
+}
