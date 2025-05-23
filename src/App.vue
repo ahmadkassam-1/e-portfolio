@@ -181,46 +181,44 @@
       </div>
     </section>
 
-  <section id="pr" class="section pr-section">
-      <div class="container">
-        <h2 class="section-title">PR Activities</h2>
-        <div class="pr-grid">
-          <div v-for="activity in portfolioData.prActivities" :key="activity.id" class="pr-card">
-          <div class="pr-image">
-              <img :src="podcastImage" :alt="portfolioData.activeEvent.title" class="event-img" />
-            </div>
-            <div class="pr-content">
-              <span class="pr-type">{{ activity.type }}</span>
-              <h3>{{ activity.title }}</h3>
-              <p class="pr-date">{{ activity.date }}</p>
-              <p class="pr-summary">{{ activity.summary }}</p>
-              <div class="pr-details">
-                <h4>Production Details:</h4>
-                <ul>
-                  <li><strong>Target Audience:</strong> {{ activity.targetAudience }}</li>
-                  <li><strong>Platform:</strong> {{ activity.platform }}</li>
-                  <li><strong>Reach:</strong> {{ activity.reach }}</li>
-                  <li><strong>Engagement:</strong> {{ activity.engagement }}</li>
-                </ul>
-              </div>
- <div class="pr-results">
-                <h4>Achievements & Impact:</h4>
-                <ul>
-                  <li v-for="result in activity.results" :key="result">{{ result }}</li>
-                </ul>
-              </div>
-              <div class="podcast-link-container">
-                <a href="https://creators.spotify.com/pod/show/howest/episodes/Softwareontwikkeling-in-de-zorgsector-met-Tom-DHulster-CGM-e31rl22" target="_blank" class="button podcast-button">
-                  <span class="podcast-icon">🎧</span> Listen on Spotify
-                </a>
-              </div>
-            </div>
+<section id="pr" class="section pr-section">
+  <div class="container">
+    <h2 class="section-title">PR Activities</h2>
+    <div class="pr-grid">
+      <div v-for="activity in portfolioData.prActivities" :key="activity.id" class="pr-card">
+        <div class="pr-image">
+          <img :src="podcastImage" :alt="activity.title" class="event-img" />
+        </div>
+        <div class="pr-content">
+          <span class="pr-type">{{ activity.type }}</span>
+          <h3>{{ activity.title }}</h3>
+          <p class="pr-date">{{ activity.date }}</p>
+          <p class="pr-summary">{{ activity.summary }}</p>
+          <div class="pr-details">
+            <h4>Production Details:</h4>
+            <ul>
+              <li><strong>Target Audience:</strong> {{ activity.targetAudience }}</li>
+              <li><strong>Platform:</strong> {{ activity.platform }}</li>
+              <li><strong>Reach:</strong> {{ activity.reach }}</li>
+              <li><strong>Engagement:</strong> {{ activity.engagement }}</li>
+            </ul>
           </div>
-            </div>
+          <div class="pr-results">
+            <h4>Achievements & Impact:</h4>
+            <ul>
+              <li v-for="result in activity.results" :key="result">{{ result }}</li>
+            </ul>
+          </div>
+          <div class="podcast-link-container">
+            <a href="https://creators.spotify.com/pod/show/howest/episodes/Softwareontwikkeling-in-de-zorgsector-met-Tom-DHulster-CGM-e31rl22" target="_blank" class="button podcast-button">
+              <span class="podcast-icon">🎧</span> Listen on Spotify
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
@@ -1395,6 +1393,35 @@ body {
     height: 25px;
     font-size: 0.8rem;
   }
+}
+
+.podcast-link-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.podcast-button {
+  background-color: #1DB954; /* Spotify green */
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(29, 185, 84, 0.2);
+}
+
+.podcast-button:hover {
+  background-color: #1ed760; /* Lighter Spotify green on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(29, 185, 84, 0.3);
+}
+
+.podcast-icon {
+  font-size: 1.3rem;
 }
 
 @media (max-width: 480px) {
