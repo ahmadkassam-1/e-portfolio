@@ -203,12 +203,19 @@
                   <li><strong>Engagement:</strong> {{ activity.engagement }}</li>
                 </ul>
               </div>
-              <div class="pr-results">
+ <div class="pr-results">
                 <h4>Achievements & Impact:</h4>
                 <ul>
                   <li v-for="result in activity.results" :key="result">{{ result }}</li>
                 </ul>
               </div>
+              <div class="podcast-link-container">
+                <a href="https://creators.spotify.com/pod/show/howest/episodes/Softwareontwikkeling-in-de-zorgsector-met-Tom-DHulster-CGM-e31rl22" target="_blank" class="button podcast-button">
+                  <span class="podcast-icon">🎧</span> Listen on Spotify
+                </a>
+              </div>
+            </div>
+          </div>
             </div>
           </div>
         </div>
