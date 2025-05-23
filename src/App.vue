@@ -113,7 +113,7 @@
             <h3>Deployment & Hosting</h3>
             <p>{{ portfolioData.buildProcess.deployment }}</p>
             <div class="github-link">
-              <a href="#" class="button secondary">View Source Code</a>
+              <a href="https://github.com/ahmadkassam-1/e-portfolio" class="button secondary">View Source Code</a>
             </div>
           </div>
         </div>
